@@ -1,4 +1,4 @@
-from internal.models.user_model import User, AddUser
+from internal.models.user_model import AddUser, User
 
 
 class UserRepository:
@@ -16,7 +16,9 @@ class UserRepository:
 
     def create_user(self, user: AddUser) -> User:
         self._id_counter += 1
-        new_user = User(id=self._id_counter, name=user.name, is_verified=user.is_verified)
+        new_user = User(
+            id=self._id_counter, name=user.name, is_verified=user.is_verified
+        )
         self._users.append(new_user)
         return new_user
 

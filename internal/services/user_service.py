@@ -1,4 +1,4 @@
-from internal.models.user_model import User, AddUser
+from internal.models.user_model import AddUser, User
 from internal.repositories.user_repository import UserRepository
 
 

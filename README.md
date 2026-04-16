@@ -40,3 +40,28 @@ Interactive docs available at `http://127.0.0.1:8000/docs`.
   "is_verified": false
 }
 ```
+
+## Docker
+
+Build and run the image manually:
+
+```bash
+docker build -t py_crud .
+docker run -p 8000:8000 py_crud
+```
+
+`.dockerignore` is included to exclude unnecessary files (venv, cache, git, etc.) from the image.
+
+## Docker Compose
+
+Start the app:
+
+```bash
+docker compose up --build
+```
+
+Stop the app:
+
+```bash
+docker compose down
+```

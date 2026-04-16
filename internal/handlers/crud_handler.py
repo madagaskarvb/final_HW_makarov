@@ -1,5 +1,6 @@
 from fastapi import HTTPException
-from internal.models.user_model import User, AddUser
+
+from internal.models.user_model import AddUser, User
 from internal.services.user_service import UserService
 
 service = UserService()

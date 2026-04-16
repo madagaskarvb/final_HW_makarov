@@ -1,6 +1,7 @@
 from fastapi import APIRouter
-from internal.models.user_model import User, AddUser
+
 from internal.handlers import crud_handler
+from internal.models.user_model import AddUser, User
 
 router = APIRouter()
 
